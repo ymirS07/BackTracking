@@ -23,3 +23,4 @@ class Solution:
 
         backtracking(candidates, target, 0)
         return res
+#剪枝：需要先把数组变成有序的，同一层不允许重复，那么就是需要同时满足i > startindex and candidates[i] == candidates[i-1]
